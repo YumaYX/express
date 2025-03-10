@@ -3,8 +3,8 @@ default:
 
 clean:
 	rm -rf _posts
-	git checkout -f _posts
 	mkdir -p _posts
+	git checkout -f _posts
 
 pub:
 	-make clean
