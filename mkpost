@@ -12,4 +12,4 @@ date: $(date "+%F %H:%M")
 
 PTEMPLATE
 
-ruby _lib/app.rb >> $filename
+ruby _lib/${1} >> $filename
