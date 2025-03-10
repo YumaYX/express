@@ -34,6 +34,7 @@ jobs:
 
       - name: Generate and Commit Posts
         run: |
+          [ "$(ls | wc -l)" -gt 9 ] && ls | sort | head -n -9 | xargs rm -f
           ./mkpost app.rb
           ./mkpost app2.rb
           git config --global user.name "${GITHUB_ACTOR}"
