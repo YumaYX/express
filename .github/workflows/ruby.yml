@@ -26,8 +26,23 @@ jobs:
     env:
       BUNDLE_GEMFILE: ${{ matrix.gemfile }}
     steps:
+
     - uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+
     - uses: ruby/setup-ruby@v1
       with:
         ruby-version: ${{ matrix.ruby }}
     - run: ./mkpost
+
+    - name: Configure Git
+      run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+    - name: Commit and Push changes
+      run: |
+        git add _posts/*
+        git commit -m "Auto commit: $(date)" || echo "No changes to commit"
+        git push origin HEAD
