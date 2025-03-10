@@ -7,6 +7,7 @@ clean:
 	git checkout -f _posts
 
 pub:
+	git pull
 	-make clean
 	git add .
 	sleep 5
