@@ -1,0 +1,14 @@
+#!/bin/bash
+
+title=$(date '+%F%T' | md5sum | awk '{print $1}')
+filename="_posts/`date +%Y-%m-%d-"${title}".markdown`"
+filename=${filename//" "/"_"}
+
+cat > $filename <<PTEMPLATE
+---
+layout: post
+---
+
+PTEMPLATE
+
+ruby _lib/app.rb >> $filename
