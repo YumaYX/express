@@ -6,7 +6,7 @@ clean:
 	git checkout -f _posts
 
 pub:
-	make clean
+	-make clean
 	git add .
 	sleep 5
 	git commit -am 'update'
