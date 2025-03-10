@@ -10,7 +10,6 @@ on:
   # Runs on pushes targeting the default branch
   push:
     branches: ["main"]
-    on:
   workflow_dispatch:
   schedule:
     - cron: '30 12 * * *'
