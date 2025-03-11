@@ -12,7 +12,7 @@ on:
     branches: ["main"]
   workflow_dispatch:
   schedule:
-    - cron: '0 23,3,7 * * *'
+    - cron: '5 23,3,7 * * *'
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
