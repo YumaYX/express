@@ -8,7 +8,7 @@ name: Generate and Commit Posts
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 8,12,16 * * *'
+    - cron: '0 23,3,7 * * *'
 
 permissions:
   contents: write  # Required for committing changes
