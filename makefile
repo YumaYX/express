@@ -4,6 +4,7 @@ default:
 clean:
 	rm -rf _posts
 	mkdir -p _posts
+	touch _posts/x
 	git checkout -f _posts
 
 pub:
