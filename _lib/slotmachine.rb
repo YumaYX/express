@@ -11,7 +11,7 @@ def check_winning(slot_board)
   slot_board.each do |row|
     next unless row.uniq.size == 1
 
-    if row[0] == '７' # 横揃いが「７」の場合は大当たり
+    if row[0] == '7️⃣' # 横揃いが「７」の場合は大当たり
       puts '🎉 大当たり！ 🎉'
       exit
     else
