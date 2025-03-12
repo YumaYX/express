@@ -9,7 +9,7 @@ class WeatherData
   # 天気を絵文字に変換する関数
   def self.weather_to_emoji(weather)
     weather.gsub(/晴れ|快晴/, '☀️')
-           .gsub(/晴/, '☀')
+           .gsub(/晴/, '☀️')
            .gsub(/曇り/, '☁️')
            .gsub(/曇/, '☁️')
            .gsub(/雨/, '☔')
