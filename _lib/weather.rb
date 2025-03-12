@@ -10,7 +10,7 @@ class WeatherData
   def self.weather_to_emoji(weather)
     weather.gsub(/晴れ|快晴/, '☀️')
            .gsub(/晴/, '☀')
-           .gsub(/曇り/, '☁️'
+           .gsub(/曇り/, '☁️')
            .gsub(/曇/, '☁️')
            .gsub(/雨/, '☔')
            .gsub(/雪/, '☃️')
