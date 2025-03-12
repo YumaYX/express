@@ -11,8 +11,10 @@ on:
   push:
     branches: ["main"]
   workflow_dispatch:
-  schedule:
-    - cron: '5 23,3,7 * * *'
+  workflow_run:
+    workflows: ["clean"]
+    types:
+      - completed
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
