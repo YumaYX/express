@@ -1,0 +1,16 @@
+---
+layout: post
+date: 2025-03-13 15:24
+---
+
+iTunes Store - Top songs<br />
+1: HEART - King & Prince<br />
+2: 怪獣 - サカナクション<br />
+3: 琥珀 - SEKAI NO OWARI<br />
+4: ネーブルオレンジ - 乃木坂46<br />
+5: BOW AND ARROW - 米津玄師<br />
+6: わたしに花束 - Ado<br />
+7: ライラック - Mrs. GREEN APPLE<br />
+8: ダレモ - トゲナシトゲアリ<br />
+9: EGO - 初星学園 & 花海咲季<br />
+10: 百花繚乱 - 幾田りら<br />
