@@ -2,7 +2,7 @@
 
 filename="_posts/$(date +%Y-%m-%d-%H%M%S%5N)${RANDOM}.markdown"
 
-cat > $filename <<PTEMPLATE
+cat > ${filename} <<PTEMPLATE
 ---
 layout: post
 date: $(date "+%F %H:%M")
@@ -10,4 +10,4 @@ date: $(date "+%F %H:%M")
 
 PTEMPLATE
 
-ruby _lib/${1} >> $filename
+ruby _lib/${1} >> ${filename}
