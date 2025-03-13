@@ -1,8 +1,6 @@
 #!/bin/bash
 
-title=$(date '+%F%T' | md5sum | awk '{print $1}')
-filename="_posts/`date +%Y-%m-%d-%H%M%S%3N"${RANDOM}${title}".markdown`"
-filename=${filename//" "/"_"}
+filename="_posts/$(date +%Y-%m-%d-%H%M%S%5N)${RANDOM}.markdown"
 
 cat > $filename <<PTEMPLATE
 ---
