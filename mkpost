@@ -1,11 +1,11 @@
 #!/bin/bash
 
-filename="_posts/$(date +%Y-%m-%d-%H%M%S%5N)${RANDOM}.markdown"
+filename="_posts/$(TZ=-9 date +%Y-%m-%d-%H%M%S%5N)${RANDOM}.markdown"
 
 cat > ${filename} <<PTEMPLATE
 ---
 layout: post
-date: $(date "+%F %H:%M")
+date: $(TZ=-9 date "+%F %H:%M")
 ---
 
 PTEMPLATE
