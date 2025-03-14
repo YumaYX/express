@@ -21,4 +21,4 @@ end
 # 絵文字を取得
 clock_emoji = [emoji_code].pack("U*")
 
-puts "### #{clock_emoji}"
+puts "# #{clock_emoji}"
