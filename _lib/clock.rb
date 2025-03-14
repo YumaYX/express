@@ -4,9 +4,11 @@ def time_to_emoji(time)
   hour = time.hour
   minute = time.min
 
-  if minute.between?(0, 15) || minute.between?(45, 59)
+  if minute.between?(0, 15)
+    emoji_index = hour % 1
+  elsif minute.between?(45, 59)
     # オクロック（ちょうどの時間）を表示
-    emoji_index = hour % 12
+    emoji_index = hour % 12 + 1
   else
     # 30分（ハーフ）の時間を表示
     emoji_index = hour % 12 + 12
