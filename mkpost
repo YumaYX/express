@@ -1,6 +1,6 @@
 #!/bin/bash
 
-filename="_posts/$(TZ=Asia/Tokyo date +%Y-%m-%d-%H%M%S%5N)${RANDOM}.markdown"
+filename="_posts/$(TZ=Asia/Tokyo date +%F-%H%M%S%5N)${RANDOM}.markdown"
 
 cat > ${filename} <<PTEMPLATE
 ---
