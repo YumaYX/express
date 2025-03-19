@@ -18,7 +18,7 @@ class WeatherData
            .gsub(/霧/, '🌫️')
            .gsub(/みぞれ/, '🌨️')
            .gsub(/のち|後/, '→')
-           .gsub(/時々/, '/')
+           .gsub(/時々|か/, '/')
   end
 
   def initialize(location_code)
