@@ -36,7 +36,7 @@ jobs:
 
       - name: Generate and Commit Posts
         run: |
-          [ "$(ls _posts | wc -l)" -gt 5 ] && ls _posts | sort | head -n -5 | xargs -I@ git rm -f _posts/@
+          [ "$(ls _posts | wc -l)" -gt 6 ] && ls _posts | sort | head -n -6 | xargs -I@ git rm -f _posts/@
           git config --global user.name "${GITHUB_ACTOR}"
           git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
           git add _posts/*
