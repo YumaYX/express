@@ -35,6 +35,7 @@ jobs:
       - name: Generate and Commit Posts
         run: |
           ./mkpost app.rb
+          ./mkpost app2.rb
           ./mkpost clock.rb
           ./mkpost slotmachine.rb
           ./mkpost weather.rb
