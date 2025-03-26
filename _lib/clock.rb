@@ -25,31 +25,31 @@ tokyo_time = Time.now.getlocal("+09:00")
 
 def sky_brightness(hh)
   case hh
-  when 4 then puts "🌄"  
-  when 5 then puts "🌅"  
-  when 6 then puts "🌞"  
-  when 7 then puts "🏙️"  
-  when 8 then puts "🌤"  
-  when 9 then puts "🌞"  
-  when 10 then puts "☀️"  
-  when 11 then puts "🔆"  
-  when 12 then puts "🍽️"
-  when 13 then puts "🏖️"  
-  when 14 then puts "🌤️"  
-  when 15 then puts "🌥️"  
-  when 16 then puts "🌇"  
-  when 17 then puts "🏞️"  
-  when 18 then puts "🌆"  
-  when 19 then puts "🌓"  
-  when 20 then puts "🌃"  
-  when 21 then puts "🌠"  
-  when 22 then puts "✨"  
-  when 23 then puts "🌙"  
-  when 0 then puts "💤"  
-  when 1 then puts "🦉"  
-  when 2 then puts "🌌"  
-  when 3 then puts "🌑"  
-  else puts "❓"  
+  when 4 then return "🌄"  # 夜明け前
+  when 5 then return "🌅"  # 夜明け
+  when 6 then return "🌞"  # 朝（日差しが強まり始める）
+  when 7 then return "🏙️"  # 朝の都市
+  when 8 then return "🌤"  # 午前（少し雲があるが明るい）
+  when 9 then return "🌞"  # 午前中（太陽が高くなる）
+  when 10 then return "☀️"  # 昼前（明るく快晴）
+  when 11 then return "🔆"  # 真昼（最も明るい時間）
+  when 12 then return "🍽️"  # ランチタイム
+  when 13 then return "🏖️"  # 午後（のんびりした雰囲気）
+  when 14 then return "🌤️"  # 午後（少し日が傾き始める）
+  when 15 then return "🌥️"  # 夕方前（少し雲が出てくる）
+  when 16 then return "🌇"  # 夕方（オレンジ色の空）
+  when 17 then return "🏞️"  # 日没前（自然が美しい時間）
+  when 18 then return "🌆"  # 日暮れ（街の光が目立ち始める）
+  when 19 then return "🌓"  # 宵（半月が見え始める）
+  when 20 then return "🌃"  # 夜（街の明かりが灯る）
+  when 21 then return "🌠"  # 夜（流れ星が見えることも）
+  when 22 then return "✨"  # 深夜前（静かな夜）
+  when 23 then return "🌙"  # 真夜中（月が輝く）
+  when 0 then return "💤"  # 深夜（眠る時間）
+  when 1 then return "🦉"  # 夜更け（夜行性の動物が活動）
+  when 2 then return "🌌"  # 夜更け（星がよく見える）
+  when 3 then return "🌑"  # 最も暗い時間帯（新月のように）
+  else return "❓"  # 無効な時間
   end
 end
 
