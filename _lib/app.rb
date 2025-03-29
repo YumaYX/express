@@ -2,7 +2,7 @@
 
 require_relative 'itunessongs'
 
-puts "iTunes Store - Top songs<br />"
+puts "💿iTunes Store - Top Songs<br />"
 
 d = get_songs_ranking_data(10)
 extract_songs_ranking(d).each.with_index(1) do |ele, rank|
