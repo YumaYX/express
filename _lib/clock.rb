@@ -36,9 +36,9 @@ def sky_brightness(hh)
   when 12 then return "🍽️"  # ランチタイム
   when 13 then return "🏖️"  # 午後（のんびりした雰囲気）
   when 14 then return "🌤️"  # 午後（少し日が傾き始める）
-  when 15 then return "🌥️"  # 夕方前（少し雲が出てくる）
-  when 16 then return "🌇"  # 夕方（オレンジ色の空）
-  when 17 then return "🏞️"  # 日没前（自然が美しい時間）
+  when 15 then return "🍭"
+  when 16 then return "🏞️"
+  when 17 then return "🌇"
   when 18 then return "🌆"  # 日暮れ（街の光が目立ち始める）
   when 19 then return "🌓"  # 宵（半月が見え始める）
   when 20 then return "🌃"  # 夜（街の明かりが灯る）
