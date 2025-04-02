@@ -11,7 +11,7 @@ class WeatherData
     weather.gsub(/晴れ|快晴/, '☀️')
            .gsub(/晴/, '☀️')
            .gsub(/曇り/, '☁️')
-           .gsub(/曇/, '☁️')
+           .gsub(/曇|止む/, '☁️')
            .gsub(/雨/, '☔')
            .gsub(/雪/, '☃️')
            .gsub(/雷/, '⚡')
