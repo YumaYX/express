@@ -36,7 +36,8 @@ jobs:
         run: |
           ./mkpost rubyv.rb
           ./mkpost app.rb
-          #./mkpost app2.rb
+          ./mkpost app2.rb
+          ./mkpost year.rb
           ./mkpost clock.rb
           ./mkpost slotmachine.rb
           ./mkpost weather.rb
