@@ -54,4 +54,4 @@ def sky_brightness(hh)
 end
 
 # 絵文字を出力
-puts "# #{time_to_emoji(tokyo_time)}#{sky_brightness(tokyo_time.hour)}"
+puts "Updated:#{time_to_emoji(tokyo_time)}#{sky_brightness(tokyo_time.hour)}"

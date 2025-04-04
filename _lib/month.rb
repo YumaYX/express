@@ -29,4 +29,4 @@ def month_to_emoji(month)
 end
 
 # 現在の月を表示
-puts "# #{month_to_emoji(current_month)}"
+puts "This Month:#{month_to_emoji(current_month)}"
