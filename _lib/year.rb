@@ -8,7 +8,7 @@ def year_progress
   total_seconds = end_of_year - start_of_year
   progress = (elapsed_seconds / total_seconds * 100).round(2)
 
-  puts "今年の進捗率:#{progress}%"
+  puts "Year Progress:`#{progress}%`"
 end
 
 year_progress

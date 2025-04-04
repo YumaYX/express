@@ -37,4 +37,5 @@ now = Time.now.getlocal("+09:00")
 age = moon_age(now)
 phase, emoji = moon_phase_with_emoji(age)
 
-puts "Lunar Phase:#{emoji}"
+puts "Lunar Phase"
+puts "# #{emoji}"
