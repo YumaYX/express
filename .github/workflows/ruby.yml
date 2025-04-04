@@ -38,6 +38,7 @@ jobs:
           ./mkpost app.rb
           #./mkpost app2.rb
           ./mkpost year.rb
+          ./mkpost moon.rb
           ./mkpost clock.rb
           ./mkpost slotmachine.rb
           ./mkpost weather.rb
