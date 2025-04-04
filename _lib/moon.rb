@@ -35,4 +35,4 @@ today = Date.today
 age = moon_age(today)
 phase, emoji = moon_phase_with_emoji(age)
 
-puts emoji
+puts "# #{emoji}"
