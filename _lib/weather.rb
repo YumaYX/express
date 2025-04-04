@@ -52,6 +52,7 @@ end
 weather = WeatherData.new("130010")
 
 # 結果を出力
-puts "東京の天気<br />#{weather.telop}<br />"
+puts "東京の天気"
+puts "# #{weather.telop}"
 puts "最高気温: #{weather.maxtemp}<br />" if weather.maxtemp
 puts "最低気温: #{weather.mintemp}<br />" if weather.mintemp
