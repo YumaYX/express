@@ -39,5 +39,3 @@ phase, emoji = moon_phase_with_emoji(age)
 
 puts "Lunar Phase"
 puts "# #{emoji}"
-
-puts age
