@@ -1,6 +1,0 @@
----
-layout: post
-date: 2025-04-18 12:27
----
-
-Ruby Version: `3.4.3`, Platform: `x86_64-linux`
